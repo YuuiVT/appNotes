@@ -1,4 +1,4 @@
-package jp.yuui.notesapp
+package jp.yuui.notesapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

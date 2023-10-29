@@ -1,4 +1,4 @@
-package jp.yuui.notesapp
+package jp.yuui.notesapp.ui
 
 import android.os.Bundle
 import androidx.fragment.app.FragmentActivity
@@ -12,5 +12,10 @@ class CreateNoteActivity: FragmentActivity() {
         super.onCreate(savedInstanceState)
         _binding = CreateNoteActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 }
